@@ -67,6 +67,7 @@ return [
     | `storage:link` Artisan command is executed. The array keys should be
     | the locations of the links and the values should be their targets.
     |
+    
     */
 
     'links' => [
