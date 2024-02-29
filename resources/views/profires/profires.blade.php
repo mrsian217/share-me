@@ -3,7 +3,7 @@
     <div class="border border-gray-300 p-4">
         @if (isset($profires))
             @foreach ($profires as $profire)
-                <p class="text-sm">{{ $profire->content }}</p>
+                <textarea class="input input-bordered text-left w-80 h-48">{{ $profire->content }}</textarea>
             @endforeach
         @endif
     </div>

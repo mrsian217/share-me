@@ -26,8 +26,4 @@ class Sharepost extends Model
     {
         return $this->belongsToMany(User::class, 'goods', 'sharepost_id', 'user_id')->withTimestamps();
     }
-    
-    public function getPostImageAttribute($value){
-       return asset('storage/'.$value);
-    }
 }

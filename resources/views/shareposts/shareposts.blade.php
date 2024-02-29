@@ -12,8 +12,8 @@
                 </div>
                 {{-- 画像の表示 --}}
                 @if($sharepost->img_path)
-    　　　　　　　　　　　　<img src="{{ Storage::url($sharepost->img_path) }}" class="w-full h-full object-cover object-center mb-2">
-　　　　　　　　@endif
+                    <img src="{{ Storage::url($sharepost->img_path) }}" class="object-cover object-center mb-2" style="max-width: 320px; height: 250px; display: block; margin-left: auto; margin-right: auto;">
+                @endif
                 {{-- タイトルと文章 --}}
                 <div class="flex flex-col">
                     <p class="text-lg font-semibold">{{ $sharepost->title }}</p>
